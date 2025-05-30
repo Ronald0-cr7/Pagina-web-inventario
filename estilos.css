@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(96, 169, 211);
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.inicio{
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+h2{
+    color: #333;
+    margin-bottom: 20px;
+
+}
+form {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+form label{
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #000;
+}
+form label[for="contraseña"]{
+    color:rgb(0,0,0);  
+    font-weight: bold;
+}
+form label[for="correo"]{
+    color:rgb(0,0,0);  
+    font-weight: bold;
+}
+#correo, #contraseña{
+    padding: 10px;
+    border: 2px solid #1d11cf;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;         /* Negrita en el texto dentro del input */
+    background-color: #e8f0fe; /* Fondo azul claro suave */
+    color: #000;               /* Texto negro para mayor contraste */
+    width: 92%;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1a28a7;
+    color: white;
+    border: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer; 
+
+}
+button:hover {
+    background-color: #1eacb1;
+}
+.parrafo{
+    margin-top: 15px;
+    font-size:14px;
+    color: #7b828a;
+    
+}
+
+.logo-usuario {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-usuario:hover {
+    transform: scale(1.05);
+}
