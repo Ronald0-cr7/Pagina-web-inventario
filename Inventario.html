@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestor de Inventario</h1>
+
+    <form id="add-item-form">
+        <h2>Añadir Nuevo Artículo</h2>
+        <div>
+            <label for="item-name">Nombre:</label>
+            <input type="text" id="item-name" required>
+        </div>
+        <div>
+            <label for="item-quantity">Cantidad:</label>
+            <input type="number" id="item-quantity" min="0" required>
+        </div>
+        <div>
+            <label for="item-price">Precio (S/):</label>
+            <input type="number" id="item-price" min="0" step="0.01" required>
+        </div>
+        <button type="submit">Añadir Artículo</button>
+    </form>
+
+    <h2>Inventario Actual</h2>
+    <table id="inventory-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Precio(S/)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="inventory-body">
+            <!-- Las filas del inventario se añadirán aquí -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
