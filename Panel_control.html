@@ -1,33 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Iniciar Sesion</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="panel.css">
-
-
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
     <div class="control">
-        <img src="Gestion.png" alt="Logo de la pagina web" class="imagen" >
-        
-        <h2>Bienvenido a su panel de control</h2>
-        <form method="post" action="">
-        <ol>
-    <li>
-        <button type="submit"><i class="fas fa-boxes"></i> Actualizar el inventario</button>
-    </li>
-    <li>
-        <button type="submit"><i class="fas fa-cash-register"></i> Registrar ventas</button>
-    </li>
-    <li>
-        <button type="button" onclick="window.location.href='login.html'"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
-    </li>
-</ol>
+        <img src="Gestion.png" alt="Logo de la página web" class="imagen">
 
-        </form>
+        <h2>Bienvenido a su panel de control</h2>
+
+        <ol>
+            <li>
+                <button type="button" onclick="window.location.href='Tienda_inventario.html'">
+                    <i class="fas fa-boxes"></i> Actualizar el inventario
+                </button>
+            </li>
+            <li>
+                <button type="button" onclick="window.location.href='Registro_ventas.html'">
+                    <i class="fas fa-cash-register"></i> Registrar ventas
+                </button>
+            </li>
+            <li>
+                <button type="button" onclick="window.location.href='https://www.google.com'">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                </button>
+            </li>
+        </ol>
     </div>
-    </body>
+</body>
 </html>
