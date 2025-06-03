@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración y gestión de inventario</title>
+    <link rel="stylesheet" href="Inventario.css">
+</head>
+
+<body>
+
+    <div class="Registro">
+        <h1>Gestión de inventario</h1>
+        <img src="Gestion.png" alt="Registro del inventario y control del stock de la tienda." class="gestion">
+        
+        <h2>Registrar Nuevo Producto</h2>
+
+        <form class="tienda">
+            <!-- Contenedor en columnas -->
+            <div class="form-columnas">
+                <div class="columna">
+                    <label for="Nombre">Nombre del producto:</label>
+                    <input type="text" id="Nombre" name="nombre_producto">
+
+                    <label for="precio_compra">Precio de compra (S/):</label>
+                    <input type="number" id="precio_compra" name="precio_compra">
+
+                    <label for="stock">Cantidad de Stock:</label>
+                    <input type="number" id="stock" name="cantidad_productos">
+                </div>
+
+                <div class="columna">
+                    <label for="Descripcion">Descripción del producto:</label>
+                    <input type="text" id="Descripcion" name="Descripcion_producto">
+
+                    <label for="precio_venta">Precio de Venta (S/):</label>
+                    <input type="number" id="precio_venta" name="precio_venta">
+        <label for="categoria">Categoria del producto: 
+            <br>
+        <select id="categoria" name="categoria del producto registrado">
+            <option value="">(Seleccione ...)</option>
+            <option value="1">Bebidas</option>
+            <option value="2">Abarrotes</option>
+            <option value="3">Limpieza</option>
+            <option value="4">Lacteos</option>
+            <option value="5">Cuidado personal</option>
+            <option value="6">Mascotas</option>
+        </select>
+        </label>
+
+                </div>
+            </div>
+            <button type="submit">Guardar Producto</button>
+        </form>
+    </div>
+
+    <h2>Lista de productos registrados:</h2>
+<h3>Buscar producto:</h3>
+<input type="text" id="busqueda" placeholder="Buscar por nombre o categoría..." />
+
+    <table id="tablaProductos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio Compra</th>
+                <th>Precio Venta</th>
+                <th>Stock</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Productos insertados dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="inventario.js"></script>
+    <button id="descargarCSV">Descargar CSV</button>
+
+</body>
+</html>
+</body>
+</html>
