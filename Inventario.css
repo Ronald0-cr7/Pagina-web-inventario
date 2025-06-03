@@ -1,0 +1,161 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+h1{
+    color: rgb(22, 87, 67)
+}
+h2{
+    color: rgb(11, 58, 129);
+}
+.gestion {
+    width: 500px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.Registro {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: rgb(139, 243, 212);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imagen{
+    width: 300px;
+    border-radius: 70px ;
+    border: solid rgb(10, 100, 93);
+}
+form label {
+    display: block; /* Hace que la etiqueta ocupe una línea completa */
+    margin-top: 15px; /* Espacio entre campos */
+    font-weight: bold; /* Resalta las etiquetas */
+    color: #0740b9; /* Verde oscuro para texto */
+}
+form input {
+    width:100%; /* Ocupa todo el ancho de su columna */
+    padding: 10px; /* Espacio interno del campo */
+    margin-top: 5px; /* Pequeño espacio entre etiqueta e input */
+    border: 1px solid #068277; /* Borde de color turquesa oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no agrande el campo */
+    background-color: #f0ffff; /* Fondo suave (casi blanco azulado) */
+}
+button{
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #0c968f;
+    color: rgb(255, 255, 255);
+    border: rgb(1, 92, 65) solid;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #115293;
+}
+
+
+.form-columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.columna {
+    flex: 1;
+    min-width: 250px;
+}
+form.tienda select {
+    margin-top: 3px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px; /* puedes ajustar este valor según tu diseño */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px;
+    overflow: hidden; /* Para que el borde redondeado se aplique */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    font-size: 16px;
+}
+
+th {
+    background-color: #0c968f;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f7f5;
+}
+
+td button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 2px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+td button:first-child {
+    background-color: #ffc107; /* Amarillo (Editar) */
+    color: #000;
+}
+
+td button:first-child:hover {
+    background-color: #e0a800;
+}
+
+td button:last-child {
+    background-color: #dc3545; /* Rojo (Eliminar) */
+    color: #fff;
+}
+
+td button:last-child:hover {
+    background-color: #c82333;
+}
+#busqueda {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #0c968f;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
